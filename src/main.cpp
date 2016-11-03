@@ -987,47 +987,11 @@ int64_t GetProofOfWorkReward(int64_t nFees)
  
     if(pindexBest->nHeight+1 == 1)
     {
-        nSubsidy = 1420000000 * COIN;
+        nSubsidy = 200000000 * COIN;
     }
 	    else if(pindexBest->nHeight+1 >= 2 && pindexBest->nHeight+1 <= 25)
     {
         nSubsidy = 0 * COIN;
-    }
-        else if(pindexBest->nHeight+1 >= 26 && pindexBest->nHeight+1 <= 259226)
-    {
-        nSubsidy = 82.175 * COIN;
-    }
-		else if(pindexBest->nHeight+1 >= 259227 && pindexBest->nHeight+1 <= 518426)
-    {
-        nSubsidy = 73.95 * COIN;
-    }
-        else if(pindexBest->nHeight+1 >= 518427 && pindexBest->nHeight+1 <= 777653)
-    {
-        nSubsidy = 66.56 * COIN;
-    }
-        else if(pindexBest->nHeight+1 >= 777654 && pindexBest->nHeight+1 <= 1036880)
-    {
-        nSubsidy = 59.9 * COIN;
-	}   
-		else if(pindexBest->nHeight+1 >= 1036881 && pindexBest->nHeight+1 <= 1296106)
-	{
-		nSubsidy = 53.91 * COIN;
-	}	
-		else if(pindexBest->nHeight+1 >= 1296107 && pindexBest->nHeight+1 <= 1555332)
-	{
-		nSubsidy = 48.52 * COIN;
-	}
-		else if(pindexBest->nHeight+1 >= 1555333 && pindexBest->nHeight+1 <= 1814559)
-	{
-		nSubsidy = 43.67 * COIN;
-	}
-		else if(pindexBest->nHeight+1 >= 1814560 && pindexBest->nHeight+1 <= 2073759)
-	{
-		nSubsidy = 39.3 * COIN;
-	}
-		else if(pindexBest->nHeight+1 >= 2073760 && pindexBest->nHeight+1 <= 100000000)
-	{
-		nSubsidy = 35.37 * COIN;
 }
     
     if (fDebug && GetBoolArg("-printcreation"))
