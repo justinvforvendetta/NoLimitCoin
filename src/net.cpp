@@ -1236,8 +1236,8 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"seed1", "104.236.42.31"},
-	{"seed2", "159.203.189.227"},
+    {"seed1", "1.1.1.1"},
+	{"seed2", "1.1.1.1"},
 
 };
 
