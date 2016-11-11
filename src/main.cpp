@@ -989,7 +989,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         nSubsidy = 200000000 * COIN;
     }
-	    else if(pindexBest->nHeight+1 >= 2 && pindexBest->nHeight+1 <= 25)
+	    else if(pindexBest->nHeight+1 >= 2 && pindexBest->nHeight+1 <= 1000)
     {
         nSubsidy = 0 * COIN;
 }
@@ -2532,7 +2532,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
 
-        const char* pszTimestamp = "NoLimitCoin August of 2016";
+        const char* pszTimestamp = "NoLimitCoin November-2016";
         CTransaction txNew;
         txNew.nTime = 1464466500;
         txNew.vin.resize(1);
@@ -2546,7 +2546,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1464466500;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 6641933;
+        block.nNonce   = 15360013;
 		if(fTestNet)
         {
             block.nNonce   = 21863;
@@ -2576,7 +2576,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        assert(block.hashMerkleRoot == uint256("0x3b70744ab73862fa09379e62a9ebb0f29934cc0670619e0022dd679629fa8284"));
+        assert(block.hashMerkleRoot == uint256("0xd61776591a374a9b20a237d725011083d7724503d4bead19b79670ad7c2fc7c6"));
 
 
 	    block.print();
